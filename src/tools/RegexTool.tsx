@@ -43,7 +43,7 @@ export default function RegexTool() {
   })()
 
   return (
-    <div className="max-w-4xl">
+    <div>
       <h1 className="text-2xl font-bold mb-1 text-gray-900 dark:text-gray-100">Regex 测试器</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">实时测试正则表达式，高亮匹配结果</p>
 

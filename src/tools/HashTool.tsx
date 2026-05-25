@@ -54,7 +54,7 @@ export default function HashTool() {
   }
 
   return (
-    <div className="max-w-2xl">
+    <div>
       <h1 className="text-2xl font-bold mb-1 text-gray-900 dark:text-gray-100">Hash 计算</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">计算文本或文件的 MD5、SHA1、SHA256、SHA512</p>
 

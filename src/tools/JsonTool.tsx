@@ -59,7 +59,7 @@ export default function JsonTool() {
   }
 
   return (
-    <div className="max-w-5xl">
+    <div>
       <h1 className="text-2xl font-bold mb-1 text-gray-900 dark:text-gray-100">JSON 工具</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">格式化、压缩 JSON，或对比两份 JSON 的差异</p>
 
@@ -74,10 +74,10 @@ export default function JsonTool() {
       </div>
 
       {tab !== 'compare' ? (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div className="grid max-w-full grid-cols-1 lg:grid-cols-2 gap-4">
           <div>
             <label className="label">输入 JSON</label>
-            <textarea className="tool-textarea h-72" value={input} onChange={e => setInput(e.target.value)} placeholder='{"key": "value"}' />
+            <textarea className="tool-textarea h-96" value={input} onChange={e => setInput(e.target.value)} placeholder='{"key": "value"}' />
             <div className="flex gap-2 mt-2">
               <button className="btn-primary" onClick={tab === 'format' ? handleFormat : handleMinify}>
                 {tab === 'format' ? '格式化' : '压缩'}
@@ -88,8 +88,8 @@ export default function JsonTool() {
           <div>
             <label className="label">输出</label>
             {error
-              ? <div className="tool-textarea h-72 text-red-500 overflow-auto">{error}</div>
-              : <textarea className="tool-textarea h-72" value={output} readOnly />
+              ? <div className="tool-textarea h-96 text-red-500 overflow-auto">{error}</div>
+              : <textarea className="tool-textarea h-96" value={output} readOnly />
             }
             {output && (
               <button className="btn-secondary mt-2" onClick={() => copy(output)}>
@@ -100,14 +100,14 @@ export default function JsonTool() {
         </div>
       ) : (
         <div>
-          <div className="grid grid-cols-2 gap-4 mb-3">
+          <div className="grid max-w-full grid-cols-1 xl:grid-cols-2 gap-4 mb-3">
             <div>
               <label className="label">左侧 JSON</label>
-              <textarea className="tool-textarea h-60" value={leftJson} onChange={e => setLeftJson(e.target.value)} placeholder='{"a": 1}' />
+              <textarea className="tool-textarea h-80" value={leftJson} onChange={e => setLeftJson(e.target.value)} placeholder='{"a": 1}' />
             </div>
             <div>
               <label className="label">右侧 JSON</label>
-              <textarea className="tool-textarea h-60" value={rightJson} onChange={e => setRightJson(e.target.value)} placeholder='{"a": 2}' />
+              <textarea className="tool-textarea h-80" value={rightJson} onChange={e => setRightJson(e.target.value)} placeholder='{"a": 2}' />
             </div>
           </div>
           <button className="btn-primary mb-3" onClick={handleCompare}>对比</button>

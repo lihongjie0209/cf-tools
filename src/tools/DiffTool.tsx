@@ -26,11 +26,11 @@ export default function DiffTool() {
   )
 
   return (
-    <div className="max-w-5xl">
+    <div>
       <h1 className="text-2xl font-bold mb-1 text-gray-900 dark:text-gray-100">Diff 对比</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">对比两段文本的差异，支持行级和字符级</p>
 
-      <div className="grid grid-cols-2 gap-4 mb-3">
+      <div className="grid max-w-full grid-cols-1 xl:grid-cols-2 gap-4 mb-3">
         <div>
           <label className="label">原始文本</label>
           <textarea className="tool-textarea h-52" value={left} onChange={e => setLeft(e.target.value)}

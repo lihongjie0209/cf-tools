@@ -32,7 +32,7 @@ export default function UuidTool() {
   }
 
   return (
-    <div className="max-w-2xl">
+    <div>
       <h1 className="text-2xl font-bold mb-1 text-gray-900 dark:text-gray-100">UUID 生成器</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">批量生成 UUID v4</p>
 

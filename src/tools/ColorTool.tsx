@@ -72,7 +72,7 @@ export default function ColorTool() {
   const hslStr = `hsl(${hsl.h}, ${hsl.s}%, ${hsl.l}%)`
 
   return (
-    <div className="max-w-2xl">
+    <div>
       <h1 className="text-2xl font-bold mb-1 text-gray-900 dark:text-gray-100">颜色转换器</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">HEX ↔ RGB ↔ HSL 实时转换，支持色板选择</p>
 

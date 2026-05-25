@@ -23,7 +23,7 @@ export default function UrlTool() {
   }
 
   return (
-    <div className="max-w-3xl">
+    <div>
       <h1 className="text-2xl font-bold mb-1 text-gray-900 dark:text-gray-100">URL 编解码</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">encodeURIComponent / decodeURIComponent，实时转换</p>
 
@@ -36,7 +36,7 @@ export default function UrlTool() {
         ))}
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div className="grid max-w-full grid-cols-1 lg:grid-cols-2 gap-4">
         <div>
           <label className="label">{mode === 'encode' ? '原始文本' : 'URL 编码字符串'}</label>
           <textarea className="tool-textarea h-64" value={input} onChange={e => setInput(e.target.value)}

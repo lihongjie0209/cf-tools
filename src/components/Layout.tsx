@@ -36,7 +36,7 @@ export default function Layout() {
         </div>
 
         {/* Content area */}
-        <div className="flex-1 overflow-y-auto p-4 lg:p-6">
+        <div className="flex-1 overflow-y-auto p-6 lg:p-8">
           <Outlet />
         </div>
       </main>

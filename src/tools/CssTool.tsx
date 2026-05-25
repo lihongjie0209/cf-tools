@@ -56,7 +56,7 @@ export default function CssTool() {
   const vw375 = !isNaN(px) ? ((px / 375) * 100).toFixed(4) : ''
 
   return (
-    <div className="max-w-3xl">
+    <div>
       <h1 className="text-2xl font-bold mb-1 text-gray-900 dark:text-gray-100">CSS 工具</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">CSS 格式化美化，以及 px ↔ rem/vw 单位换算</p>
 
@@ -69,10 +69,10 @@ export default function CssTool() {
       </div>
 
       {tab === 'format' ? (
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid max-w-full grid-cols-1 xl:grid-cols-2 gap-4">
           <div>
             <label className="label">输入 CSS</label>
-            <textarea className="tool-textarea h-72" value={cssInput} onChange={e => setCssInput(e.target.value)}
+            <textarea className="tool-textarea h-96" value={cssInput} onChange={e => setCssInput(e.target.value)}
               placeholder=".btn{color:red;background:blue;}" />
             <div className="flex gap-2 mt-2">
               <button className="btn-primary" onClick={handleFormat}>格式化</button>
@@ -81,7 +81,7 @@ export default function CssTool() {
           </div>
           <div>
             <label className="label">输出</label>
-            <textarea className="tool-textarea h-72" value={cssOutput} readOnly placeholder="格式化结果..." />
+            <textarea className="tool-textarea h-96" value={cssOutput} readOnly placeholder="格式化结果..." />
             {cssOutput && <button className="btn-secondary mt-2" onClick={() => copy(cssOutput)}>{copied ? '✅ 已复制' : '复制'}</button>}
           </div>
         </div>

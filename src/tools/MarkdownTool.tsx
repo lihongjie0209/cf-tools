@@ -54,7 +54,7 @@ export default function MarkdownTool() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 flex-1 min-h-0" style={{ height: 'calc(100vh - 200px)' }}>
+      <div className="grid max-w-full grid-cols-1 xl:grid-cols-2 gap-4 flex-1 min-h-0" style={{ height: 'calc(100vh - 200px)' }}>
         <div className="flex flex-col">
           <label className="label">编辑</label>
           <textarea

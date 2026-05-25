@@ -7,6 +7,7 @@ const categories = [
     tools: [
       { path: '/base64', label: 'Base64', icon: '🔤' },
       { path: '/url', label: 'URL 编解码', icon: '🔗' },
+      { path: '/html', label: 'HTML 编解码', icon: '</>' },
       { path: '/jwt', label: 'JWT 解析', icon: '🪙' },
     ],
   },
@@ -14,6 +15,7 @@ const categories = [
     name: '格式化',
     tools: [
       { path: '/json', label: 'JSON 工具', icon: '{}' },
+      { path: '/yaml', label: 'JSON / YAML', icon: '⇄' },
       { path: '/css', label: 'CSS 工具', icon: '🎨' },
       { path: '/markdown', label: 'Markdown 预览', icon: '📝' },
     ],
@@ -23,6 +25,8 @@ const categories = [
     tools: [
       { path: '/uuid', label: 'UUID 生成', icon: '🆔' },
       { path: '/hash', label: 'Hash 计算', icon: '#' },
+      { path: '/password', label: '密码生成器', icon: '🔑' },
+      { path: '/radix', label: '进制转换', icon: '#₂' },
     ],
   },
   {
@@ -39,6 +43,8 @@ const categories = [
       { path: '/http', label: 'HTTP 构建器', icon: '🌐' },
       { path: '/diff', label: 'Diff 对比', icon: '⚖️' },
       { path: '/cron', label: 'CRON 解析', icon: '⏰' },
+      { path: '/string', label: '字符串工具', icon: 'Aa' },
+      { path: '/stats', label: '文本统计', icon: '📊' },
     ],
   },
 ]

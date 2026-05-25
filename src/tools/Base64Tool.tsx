@@ -43,7 +43,7 @@ export default function Base64Tool() {
   }
 
   return (
-    <div className="max-w-3xl">
+    <div>
       <h1 className="text-2xl font-bold mb-1 text-gray-900 dark:text-gray-100">Base64</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">文本与 Base64 互转，支持文件 Base64 编码</p>
 

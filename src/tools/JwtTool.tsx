@@ -56,7 +56,7 @@ export default function JwtTool() {
   const expStatus = result ? getExpStatus(result.payload) : null
 
   return (
-    <div className="max-w-3xl">
+    <div>
       <h1 className="text-2xl font-bold mb-1 text-gray-900 dark:text-gray-100">JWT 解析器</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">解析 JWT Token，查看 Header/Payload 和过期状态</p>
 

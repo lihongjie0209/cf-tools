@@ -80,7 +80,7 @@ export default function CronTool() {
   ]
 
   return (
-    <div className="max-w-2xl">
+    <div>
       <h1 className="text-2xl font-bold mb-1 text-gray-900 dark:text-gray-100">CRON 解析器</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">解析 CRON 表达式，显示自然语言描述和下次执行时间</p>
 

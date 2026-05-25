@@ -11,10 +11,10 @@
 
 @layer components {
   .tool-card {
-    @apply bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4;
+    @apply bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-6;
   }
   .btn {
-    @apply px-3 py-1.5 text-sm font-medium rounded-lg transition-colors cursor-pointer border-0;
+    @apply px-4 py-2 text-sm font-medium rounded-lg transition-colors cursor-pointer border-0;
   }
   .btn-primary {
     @apply btn bg-blue-600 hover:bg-blue-700 text-white;
@@ -32,12 +32,12 @@
     @apply tab-btn text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 bg-transparent;
   }
   .tool-textarea {
-    @apply w-full px-3 py-2 text-sm font-mono rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none;
+    @apply w-full min-h-[12rem] px-3 py-2 text-sm font-mono rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-y;
   }
   .tool-input {
-    @apply px-3 py-1.5 text-sm rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500;
+    @apply px-3 py-2 text-sm rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500;
   }
   .label {
-    @apply block text-xs font-medium text-gray-500 dark:text-gray-400 mb-1;
+    @apply block text-xs font-medium text-gray-500 dark:text-gray-400 mb-2;
   }
 }
